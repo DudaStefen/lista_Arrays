@@ -8,10 +8,19 @@
     //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
 
     //ENTRADA
-
-
+    const fruta1 = prompt(`Insira o nome de uma fruta`);
+    const fruta2 = prompt(`Insira o nome de outra fruta`);
+    const fruta3 = prompt(`Insira o nome de outra fruta`);
+    const bebida1 = prompt(`Insira o nome de uma bebida`);
+    const bebida2 = prompt(`Insira o nome de outra bebida`);
+    const bebida3 = prompt(`Insira o nome de outra bebida`);
     //PROCESSAMENTO
-
+    arrayVazio = []
+    arrayFruta = [fruta1,  fruta2,  fruta3, ];
+    arrayBebida = [ bebida1, bebida2, bebida3,];
+    alert(`As frutas a serem compradas são ${arrayFruta}.`);
+    alert (`As bebidas a serem compradas são ${arrayBebida}.`);
+    alert (`A lista completa de compras é ${arrayVazio = arrayFruta + arrayBebida}`);
 
     //SAÍDA
 

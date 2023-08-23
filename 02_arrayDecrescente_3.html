@@ -4,10 +4,32 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
     //ENTRADA
-
+    const n1 = Number(prompt(`Insira um número`));
+    const n2 = Number(prompt(`Insira outro número`));
+    const n3 = Number(prompt(`Insira outro número`));
 
     //PROCESSAMENTO
-
+    let arrayVazio = [];
+    if (n1 > n2 && n2 > n3) {
+        
+        arrayVazio = [n3, n2, n1];
+    }
+    else if (n2 > n1 && n1 > n3) {
+        arrayVazio = [n3, n1, n2];
+    }
+    else if (n3 > n2 && n2 > n1) {
+        arrayVazio = [n1, n2, n3];
+    }
+    else if ( n2 > n3 && n3 > n1) {
+        arrayVazio = [ n1, n3, n2];
+    }
+    else if ( n3 > n1 && n1 > n2) {
+        arrayVazio = [n2, n1, n3];
+    }
+    else {
+        arrayVazio = [n2, n3, n1];
+    }
+    alert(`os números em ordem decrescente ficam ${arrayVazio.join("-")}`);
 
     //SAÍDA
 

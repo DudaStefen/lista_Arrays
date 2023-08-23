@@ -4,10 +4,18 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2).
 
     //ENTRADA
-
+    const num1 = Number(prompt(`Insira um número`));
+    const num2 = Number(prompt(`Insira outro número`));
 
     //PROCESSAMENTO
-
+    let arrayVazio = [];
+    if (num1 > num2) {
+        arrayVazio = [num2, num1];
+    }
+    else {
+        arrayVazio = [num1, num2];
+    }
+    alert (`Os Números em ordem crescente ficam ${arrayVazio.join(" - ")}.`);
 
     //SAÍDA
     
